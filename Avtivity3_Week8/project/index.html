@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather App</h1>
+        </header>
+        
+        <main>
+            <div class="search-container">
+                <input type="text" id="cityInput" placeholder="Enter city name">
+                <button id="getWeatherBtn">Get Weather</button>
+            </div>
+            
+            <div id="errorMessage" class="error"></div>
+            
+            <div id="weatherDisplay" class="weather-display">
+                <div class="weather-icon">
+                    <img id="weatherIcon" src="" alt="Weather icon">
+                </div>
+                <div class="weather-info">
+                    <h2 id="cityName"></h2>
+                    <div class="weather-details">
+                        <div class="detail">
+                            <span class="label">Temperature:</span>
+                            <span id="temperature"></span>
+                        </div>
+                        <div class="detail">
+                            <span class="label">Feels like:</span>
+                            <span id="feelsLike"></span>
+                        </div>
+                        <div class="detail">
+                            <span class="label">Humidity:</span>
+                            <span id="humidity"></span>
+                        </div>
+                        <div class="detail">
+                            <span class="label">Wind:</span>
+                            <span id="wind"></span>
+                        </div>
+                        <div class="detail">
+                            <span class="label">Description:</span>
+                            <span id="description"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Data provided by <a href="https://www.accuweather.com/en/ph/caloocan/264875/hourly-weather-forecast/264875" target="_blank">Accuweather</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
