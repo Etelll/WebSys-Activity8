@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Knowledge Quiz</h1>
+        </header>
+        
+        <main>
+            <div class="quiz-container">
+                <form id="quizForm">
+                    <ol class="questions">
+                        <li class="question">
+                            <h3>What is the capital of France?</h3>
+                            <ul class="options">
+                                <li><input type="radio" name="q1" id="q1a" value="a"><label for="q1a">Paris</label></li>
+                                <li><input type="radio" name="q1" id="q1b" value="b"><label for="q1b">London</label></li>
+                                <li><input type="radio" name="q1" id="q1c" value="c"><label for="q1c">Berlin</label></li>
+                                <li><input type="radio" name="q1" id="q1d" value="d"><label for="q1d">Rome</label></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="question">
+                            <h3>In what country is the city of Abu Dhabi located?</h3>
+                            <ul class="options">
+                                <li><input type="radio" name="q2" id="q2a" value="a"><label for="q2a"> United Arab Emirates</label></li>
+                                <li><input type="radio" name="q2" id="q2b" value="b"><label for="q2b">Japan</label></li>
+                                <li><input type="radio" name="q2" id="q2c" value="c"><label for="q2c">Nepal</label></li>
+                                <li><input type="radio" name="q2" id="q2d" value="d"><label for="q2d">USA</label></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="question">
+                            <h3>In what country is the city of Dammam located?</h3>
+                            <ul class="options">
+                                <li><input type="radio" name="q3" id="q3a" value="a"><label for="q3a">Mauritius</label></li>
+                                <li><input type="radio" name="q3" id="q3b" value="b"><label for="q3b">Italy</label></li>
+                                <li><input type="radio" name="q3" id="q3c" value="c"><label for="q3c">Saudi Arabia</label></li>
+                                <li><input type="radio" name="q3" id="q3d" value="d"><label for="q3d">Kyrgyzstan</label></li>
+                            </ul>
+                        </li>
+                    </ol>
+                    
+                    <div class="submit-container">
+                        <button type="button" id="submitBtn">Submit Answers</button>
+                    </div>
+                </form>
+                
+                <div id="results" class="results">
+                    <h2>Your Results</h2>
+                    <p>Score: <span id="score">0</span>/<span id="totalQuestions">3</span></p>
+                    <p id="feedback"></p>
+                    <button type="button" id="resetBtn">Try Again</button>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p> Quiz App &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
